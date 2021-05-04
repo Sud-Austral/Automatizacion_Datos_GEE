@@ -29,7 +29,7 @@ def descargarDatos():
     for i in range(len(links)):
         namefile = "Link" + str(i + 1)
         url = driver.find_element_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[" + str(i+1) + "]/a")
-        urllib.request.urlretrieve(url.text, "datos_geee/" + str(namefile) +".csv")
+        urllib.request.urlretrieve(url.text, "datos_gee/" + str(namefile) +".csv")
     
     driver.close()
 
