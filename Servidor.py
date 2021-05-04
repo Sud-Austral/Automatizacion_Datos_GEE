@@ -33,6 +33,7 @@ def descargarDatos():
     
     driver.close()
 
+
 if __name__ == '__main__':
     print("Descargando datos...")
     descargarDatos()
