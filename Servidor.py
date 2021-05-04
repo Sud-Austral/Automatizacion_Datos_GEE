@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 import http.client, urllib.request, urllib.parse, urllib.error, base64
 
-enlace = "https://anin.users.earthengine.app/view/link"
+enlace = "https://anin.users.earthengine.app/view/linkdescarga"
 
 def getDriver():
     
