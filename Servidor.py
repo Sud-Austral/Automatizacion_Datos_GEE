@@ -37,4 +37,4 @@ def descargarDatos():
 if __name__ == '__main__':
     print("Descargando datos...")
     descargarDatos()
-    print("Los datos se han descargado.")
+    print("Los datos se han descargado")
