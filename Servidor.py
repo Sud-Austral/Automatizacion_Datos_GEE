@@ -45,17 +45,13 @@ def descargarDatos():
     nombre = "Link"
     foldername = "datos_"
     c = carpetas()
-    
-    fuente0 = "image.jpg"
-    destino0 = "datos_gee/image_to_folder.jpg"
-    shutil.copyfile(fuente0, destino0)
+
+    file = open("datos_gee/filename.txt", "w")
+    file.write("This is a file to create a folder using Github Actions." + os.linesep)
+    file.close()
 
     ruta = foldername + str(c + 1)
     os.mkdir("datos_gee/" + ruta)
-
-    fuente = "image.jpg"
-    destino = "datos_gee/image_to_folder.jpg"
-    shutil.copyfile(fuente, destino)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
     
