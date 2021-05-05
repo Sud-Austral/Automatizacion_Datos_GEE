@@ -1,8 +1,9 @@
 import pandas as pd
 import time
+import os
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-import http.client, urllib.request, urllib.parse, urllib.error, base64
 
 enlace = "https://anin.users.earthengine.app/view/linkdescarga"
 
@@ -18,21 +19,45 @@ def getDriver():
     driver.get(enlace)
     return driver
 
+
+def carpetas():
+    cantidad = 0
+
+    for dirpath, dirnames, filenames in os.walk("datos_gee/"):
+        if(dirpath != "datos_gee/"):
+            cantidad += 1
+
+    return cantidad
+
+
+def fechaA():
+    date = datetime.now()
+    date = date.strftime('%d-%m-%Y')
+
+    return date
+
+
 def descargarDatos():
     driver = getDriver()
-    time.sleep(5)
+    time.sleep(30)
     
     nombre = "Link"
+    foldername = "datos_"
+    c = carpetas()
     
+    ruta = foldername + str(c + 1)
+    os.mkdir("datos_gee/" + ruta)
+
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
     
     for i in range(len(links)):
         namefile = "Link" + str(i + 1)
         url = driver.find_element_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[" + str(i+1) + "]/a")
-        urllib.request.urlretrieve(url.text, "datos_gee/" + str(namefile) +".csv")
+        df = pd.read_csv(url.text)
+        df["Fecha actual"] = fechaA()
+        df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)
     
     driver.close()
-
 
 if __name__ == '__main__':
     print("Descargando datos...")
