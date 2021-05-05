@@ -39,6 +39,8 @@ def fechaA():
 
 
 def descargarDatos():
+    fuente = "image.jpg"
+
     driver = getDriver()
     time.sleep(30)
     
@@ -46,12 +48,11 @@ def descargarDatos():
     foldername = "datos_"
     c = carpetas()
 
-    ruta = foldername + str(c + 1)
-    os.mkdir("datos_gee/" + ruta)
+    destino = "datos_gee/file.png"
+    shutil.copyfile(fuente, destino)
 
-    file = open(ruta + "/filename.txt", "w")
-    file.write("This is a file to create a folder using Github Actions." + os.linesep)
-    file.close()
+    ruta = foldername + str(c + 1) # datos_1
+    os.mkdir("datos_gee/" + ruta)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
     
