@@ -45,6 +45,10 @@ def descargarDatos():
     foldername = "datos_"
     c = carpetas()
     
+    fuente0 = "file_to_create_a_folder.txt"
+    destino0 = "datos_gee/file.txt"
+    shutil.copyfile(fuente0, destino0)
+
     ruta = foldername + str(c + 1)
     os.mkdir("datos_gee/" + ruta)
 
