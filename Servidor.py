@@ -47,14 +47,14 @@ def descargarDatos():
     c = carpetas()
     
     fuente0 = "file_to_create_a_folder.txt"
-    destino0 = "datos_gee/file.txt"
+    destino0 = "datos_gee/file_to_create_a_folder.txt.txt"
     shutil.copyfile(fuente0, destino0)
 
     ruta = foldername + str(c + 1)
     os.mkdir("datos_gee/" + ruta)
 
     fuente = "file_to_create_a_folder.txt"
-    destino = ruta + "/file.txt"
+    destino = ruta + "/file_to_create_a_folder.txt.txt"
     shutil.copyfile(fuente, destino)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
