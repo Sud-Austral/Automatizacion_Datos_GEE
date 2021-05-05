@@ -1,6 +1,7 @@
 import pandas as pd
 import time
 import os
+import shutil
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
