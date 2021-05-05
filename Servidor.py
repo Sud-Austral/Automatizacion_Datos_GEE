@@ -48,7 +48,7 @@ def descargarDatos():
     foldername = "datos_"
     c = carpetas()
 
-    destino = "datos_gee/file.png"
+    destino = "datos_gee/image.jpg"
     shutil.copyfile(fuente, destino)
 
     ruta = foldername + str(c + 1) # datos_1
