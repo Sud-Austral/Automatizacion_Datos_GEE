@@ -50,7 +50,7 @@ def descargarDatos():
     file.write("This is a file to create a folder using Github Actions." + os.linesep)
     file.close()
 
-    ruta = foldername + str(c + 1)
+    '''ruta = foldername + str(c + 1)
     os.mkdir("datos_gee/" + ruta)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
@@ -60,7 +60,7 @@ def descargarDatos():
         url = driver.find_element_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[" + str(i+1) + "]/a")
         df = pd.read_csv(url.text)
         df["Fecha actual"] = fechaA()
-        df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)
+        df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)'''
     
     driver.close()
 
