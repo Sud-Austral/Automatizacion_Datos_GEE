@@ -37,7 +37,7 @@ def descargarDatos():
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
     namefile = "Clima" +  fechaA()
-    df = pd.read_csv(links.text)
+    df = pd.read_csv(links[0].text)
     df["Fecha actual"] = fechaA()
     del df[".geo"]
     df.to_csv("clima/"  + str(namefile) +".csv", index=False)
