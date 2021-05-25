@@ -40,7 +40,7 @@ def descargarDatos():
     df = pd.read_csv(links[0].text)
     df["Fecha actual"] = fechaA()
     del df[".geo"]
-    df.to_csv("clima/"  + str(namefile) +".csv", index=False)
+    df.to_csv("Clima/"  + str(namefile) +".csv", index=False)
     """
     for i in range(len(links)):
         namefile = "Link" + str(i + 1)
