@@ -1,4 +1,4 @@
-name: Datos GEE
+name: Datos Climaticos
 
 on:
     push
@@ -25,7 +25,7 @@ jobs:
     - name: Running code
       run: |
 
-        python Servidor2.py
+        python Climatico.py
 
     - uses: stefanzweifel/git-auto-commit-action@v2
       with:
