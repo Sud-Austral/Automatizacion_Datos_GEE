@@ -21,15 +21,6 @@ def getDriver():
     return driver
 
 
-def carpetas():
-    cantidad = 0
-
-    for dirpath, dirnames, filenames in os.walk("datos_gee/"):
-        if(dirpath != "datos_gee/"):
-            cantidad += 1
-
-    return cantidad
-
 
 def fechaA():
     date = datetime.now()
@@ -39,27 +30,17 @@ def fechaA():
 
 
 def descargarDatos():
-    fuente = "image.jpg"
+    
 
     driver = getDriver()
     time.sleep(30)
-    
-    nombre = "Link"
-    foldername = "datos_"
-    c = carpetas()
-
-    destino = "datos_gee/image.jpg"
-    shutil.copyfile(fuente, destino)
-
-    ruta = foldername + str(c + 1) # datos_1
-    os.mkdir("datos_gee/" + ruta)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div")
     namefile = "Clima" +  fechaA()
     df = pd.read_csv(links.text)
     df["Fecha actual"] = fechaA()
     del df[".geo"]
-    df.to_csv("clima/" + ruta + "/" + str(namefile) +".csv", index=False)
+    df.to_csv("clima/"  + str(namefile) +".csv", index=False)
     """
     for i in range(len(links)):
         namefile = "Link" + str(i + 1)
