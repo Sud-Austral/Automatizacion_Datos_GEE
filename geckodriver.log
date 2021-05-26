@@ -3132,3 +3132,139 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1622006097320	Marionette	DEBUG	Marionette stopped listening
 1622006097728	geckodriver::marionette	DEBUG	Browser process stopped: exit code: 0
 1622006097737	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1622006400708	geckodriver	INFO	Listening on 127.0.0.1:44535
+1622006401553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKdkWL2"
+1622006401560	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:45957
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1622006407599	Marionette	INFO	Marionette enabled
+1622006408229	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(/usr/lib/firefox/firefox:1943): GLib-GObject-CRITICAL **: 05:20:09.380: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:1970): GLib-GObject-CRITICAL **: 05:20:09.602: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622006411510	Marionette	TRACE	Received observer notification marionette-startup-requested
+1622006411510	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+
+(/usr/lib/firefox/firefox:2047): GLib-GObject-CRITICAL **: 05:20:11.523: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:2046): GLib-GObject-CRITICAL **: 05:20:11.541: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622006411548	Marionette	TRACE	All scripts recorded.
+1622006411549	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1622006411549	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1622006411549	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1622006411550	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1622006411551	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1622006411551	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1622006411552	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1622006411553	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1622006411554	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1622006411554	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1622006411554	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1622006411555	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1622006411555	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1622006411555	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1622006411556	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1622006411556	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1622006411556	Marionette	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1622006411557	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1622006411557	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1622006411557	Marionette	DEBUG	Setting recommended pref prompts.contentPromptSubDialog to false
+1622006411557	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1622006411557	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1622006411557	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1622006411559	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1622006411562	Marionette	INFO	Listening on port 45957
+1622006411562	Marionette	DEBUG	Marionette is listening
+1622006411613	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:32772
+1622006411616	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:45957.
+1622006411650	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1622006411653	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622006411664	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45","capabilities":{"browserName":"firefox","browserVersion":"88.0. ... /rust_mozprofileKdkWL2","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1622006411669	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"88.0.1","moz:accessibilityChecks":false,"moz:buildID":"20210504152106","moz:geckodriverVersion":"0.29.1","moz:headless":true,"moz:processID":1860,"moz:profile":"/tmp/rust_mozprofileKdkWL2","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"linux","platformVersion":"5.4.0-1047-azure","rotatable":false,"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1622006411671	webdriver::server	DEBUG	-> POST /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/timeouts {"pageLoad": 60000}
+1622006411674	Marionette	DEBUG	0 -> [0,2,"WebDriver:SetTimeouts",{"pageLoad":60000}]
+1622006411674	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1622006411675	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1622006411675	webdriver::server	DEBUG	-> POST /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/url {"url": "https://testhector.users.earthengine.app/view/climaautomatico"}
+1622006411676	Marionette	DEBUG	0 -> [0,3,"WebDriver:Navigate",{"url":"https://testhector.users.earthengine.app/view/climaautomatico"}]
+1622006411680	Marionette	TRACE	[21] MarionetteEvents actor created for window id 4294967297
+1622006411683	Marionette	TRACE	Received event beforeunload for about:blank
+1622006412173	Marionette	TRACE	Received event pagehide for about:blank
+1622006413047	Marionette	TRACE	[21] MarionetteEvents actor created for window id 4294967298
+1622006413048	Marionette	TRACE	Received event DOMContentLoaded for https://testhector.users.earthengine.app/view/climaautomatico
+1622006413124	Marionette	TRACE	[4294967297] MarionetteEvents actor created for window id 4294967300
+1622006413416	Marionette	TRACE	[4294967298] MarionetteEvents actor created for window id 4294967302
+1622006413680	Marionette	TRACE	Received event pageshow for https://testhector.users.earthengine.app/view/climaautomatico
+1622006413681	Marionette	DEBUG	0 <- [1,3,null,{"value":null}]
+1622006413686	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1622006413687	webdriver::server	DEBUG	-> POST /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/elements {"using": "xpath", "value": "/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a"}
+1622006413689	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a"}]
+1622006413741	Marionette	TRACE	[21] MarionetteCommands actor created for window id 4294967298
+1622006413750	Marionette	DEBUG	0 <- [1,4,null,[]]
+1622006413751	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1622006474814	webdriver::server	DEBUG	-> POST /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/elements {"using": "xpath", "value": "/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a"}
+1622006474815	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a"}]
+1622006474821	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"d2035b86-3420-4113-af9b-857f6b3e962a"}]]
+1622006474822	webdriver::server	DEBUG	<- 200 OK {"value":[{"element-6066-11e4-a52e-4f735466cecf":"d2035b86-3420-4113-af9b-857f6b3e962a"}]}
+1622006475825	webdriver::server	DEBUG	-> GET /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/element/d2035b86-3420-4113-af9b-857f6b3e962a/text 
+1622006475825	Marionette	DEBUG	0 -> [0,6,"WebDriver:GetElementText",{"id":"d2035b86-3420-4113-af9b-857f6b3e962a"}]
+1622006475854	Marionette	DEBUG	0 <- [1,6,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/54601f28acdd49ae13ee608680f1b2dd-8a8a9da30e846ef5a4bdf005c05dc39b:getFeatures"}]
+1622006475855	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/54601f28acdd49ae13ee608680f1b2dd-8a8a9da30e846ef5a4bdf005c05dc39b:getFeatures"}
+1622006481016	webdriver::server	DEBUG	-> GET /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/element/d2035b86-3420-4113-af9b-857f6b3e962a/text 
+1622006481017	Marionette	DEBUG	0 -> [0,7,"WebDriver:GetElementText",{"id":"d2035b86-3420-4113-af9b-857f6b3e962a"}]
+1622006481025	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/54601f28acdd49ae13ee608680f1b2dd-8a8a9da30e846ef5a4bdf005c05dc39b:getFeatures"}]
+1622006481025	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/54601f28acdd49ae13ee608680f1b2dd-8a8a9da30e846ef5a4bdf005c05dc39b:getFeatures"}
+1622006481026	webdriver::server	DEBUG	-> DELETE /session/be6ee4d9-8581-48ef-a3f0-c79d0fbe0d45/window 
+1622006481026	Marionette	DEBUG	0 -> [0,8,"WebDriver:CloseWindow",{}]
+1622006481027	Marionette	DEBUG	0 <- [1,8,null,[]]
+1622006481027	webdriver::server	DEBUG	Last window was closed, deleting session
+1622006481027	webdriver::server	DEBUG	Deleting session
+1622006481027	Marionette	DEBUG	0 -> [0,9,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1622006481028	Marionette	INFO	Stopped listening on port 45957
+1622006481055	Marionette	TRACE	Received observer notification quit-application
+1622006481060	Marionette	DEBUG	0 <- [1,9,null,{"cause":"shutdown","forced":false}]
+1622006481121	Marionette	DEBUG	Closed connection 0
+1622006481188	Marionette	TRACE	Received observer notification xpcom-will-shutdown
+1622006481188	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1622006481188	Marionette	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1622006481188	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1622006481188	Marionette	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.search.update
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.tabs.remote.separatePrivilegedContentProcess
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1622006481189	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1622006481189	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1622006481189	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1622006481190	Marionette	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1622006481190	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1622006481190	Marionette	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1622006481190	Marionette	DEBUG	Resetting recommended pref dom.max_script_run_time
+1622006481190	Marionette	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1622006481190	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1622006481190	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1622006481190	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1622006481190	Marionette	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1622006481190	Marionette	DEBUG	Resetting recommended pref prompts.contentPromptSubDialog
+1622006481190	Marionette	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1622006481190	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1622006481190	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1622006481191	Marionette	DEBUG	Resetting recommended pref signon.rememberSignons
+1622006481191	Marionette	DEBUG	Marionette stopped listening
+1622006481490	geckodriver::marionette	DEBUG	Browser process stopped: exit code: 0
+1622006481500	webdriver::server	DEBUG	<- 200 OK {"value":[]}
