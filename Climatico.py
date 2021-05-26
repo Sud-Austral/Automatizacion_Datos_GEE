@@ -26,7 +26,6 @@ def fechaA():
     return date
 
 def descargarDatos():
-    
 
     driver = getDriver()
     # time.sleep(200)    
@@ -39,31 +38,24 @@ def descargarDatos():
 
         if (len(enlace) == 0):
             exist = 0
-            print("No")
-
             time.sleep(60)
         else:
             exist = 1
-            print("Sí")
 
-    print(len(enlace))
-
-    '''namefile = "Clima " +  fechaA()
-    df = pd.read_csv(links[0].text)
-    df["Fecha actual"] = fechaA()
-    del df[".geo"]
-    df.to_csv("Clima/"  + str(namefile) +".csv", index=False)'''
+    # print(len(enlace))
 
     for i in range(len(enlace)):
 
-        namefile = "Clima " +  fechaA()
+        namefile = str(i+1) + ". Clima " +  fechaA()
         df = pd.read_csv(enlace[i].text)
 
         print(enlace[i].text)
+        df = pd.read_csv(enlace[i].text)
 
-        # df["Fecha actual"] = fechaA()
-        # del df[".geo"]
-        # df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)
+        df["Fecha actual"] = fechaA()
+        del df[".geo"]
+
+        df.to_excel("Clima/"  + str(namefile) +".xlsx", index=False)
 
     driver.close()
 
