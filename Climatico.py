@@ -33,11 +33,11 @@ def descargarDatos():
     exist = 0
 
     while(exist == 0):
-        try:
-            links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
+        links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
+        if not links:
             exist = 1
             print("Existe")
-        except:
+        else:
             exist = 0
             print("No se han encontrado enlaces.")
             time.sleep(60)
