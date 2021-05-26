@@ -20,27 +20,24 @@ def getDriver():
     driver.get(enlace)
     return driver
 
-
-
 def fechaA():
     date = datetime.now()
     date = date.strftime('%d-%m-%Y')
-
     return date
-
 
 def descargarDatos():
     
-
     driver = getDriver()
     time.sleep(30)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
-    namefile = "Clima" +  fechaA()
+    namefile = "Clima " +  fechaA()
     df = pd.read_csv(links[0].text)
+    
     df["Fecha actual"] = fechaA()
     del df[".geo"]
     df.to_csv("Clima/"  + str(namefile) +".csv", index=False)
+
     """
     for i in range(len(links)):
         namefile = "Link" + str(i + 1)
@@ -55,4 +52,4 @@ def descargarDatos():
 if __name__ == '__main__':
     print("Descargando datos...")
     descargarDatos()
-    print("Los datos se han descargado")
+    print("Los datos se han descargado.")
