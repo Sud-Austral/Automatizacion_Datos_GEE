@@ -33,7 +33,15 @@ def descargarDatos():
     exist = 0
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
-    print(len(links))
+    # print(len(links))
+
+    while(len(links) == 0):
+        links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
+        print(len(links))
+        print("No hay datos.")
+        time.sleep(60)
+
+    print("Sí hay datos.")
 
     for i in range(len(links)):
         namefile = "Clima " +  fechaA()
