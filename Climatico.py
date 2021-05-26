@@ -50,10 +50,9 @@ def descargarDatos():
 
     for i in range(len(enlace)):
 
-        namefile = str(i+1) + "Clima " +  fechaA()
-        df = pd.read_csv(enlace[i].text)
-        
+        namefile = str(i+1) + "Clima " +  fechaA()        
         print(enlace[i].text)
+        
         df = pd.read_csv(enlace[i].text)
 
         df["Fecha actual"] = fechaA()
