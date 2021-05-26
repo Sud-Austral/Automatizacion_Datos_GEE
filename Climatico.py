@@ -62,7 +62,7 @@ def descargarDatos():
         salida.append(df.copy())
 
     dataFinal = pd.concat(salida)
-    dataFinal.to_excel("Consolidado clima " + str(fechaA()) +".xlsx", index=False)
+    dataFinal.to_excel("Clima " + str(fechaA()) +".xlsx", index=False)
 
     driver.close()
 
