@@ -31,22 +31,24 @@ def descargarDatos():
     time.sleep(30)
 
     links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
-    namefile = "Clima " +  fechaA()
+    '''namefile = "Clima " +  fechaA()
     df = pd.read_csv(links[0].text)
-    
+
     df["Fecha actual"] = fechaA()
     del df[".geo"]
-    df.to_csv("Clima/"  + str(namefile) +".csv", index=False)
+    df.to_csv("Clima/"  + str(namefile) +".csv", index=False)'''
 
-    """
     for i in range(len(links)):
-        namefile = "Link" + str(i + 1)
-        url = driver.find_element_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[" + str(i+1) + "]/a")
+        namefile = "Clima " +  fechaA()
+        print(links[i].text)
+        df = pd.read_csv(links[i].text)
+
+        '''url = driver.find_element_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[" + str(i+1) + "]/a")
         df = pd.read_csv(url.text)
         df["Fecha actual"] = fechaA()
         del df[".geo"]
-        df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)
-    """
+        df.to_csv("datos_gee/" + ruta + "/" + str(namefile) +".csv", index=False)'''
+
     driver.close()
 
 if __name__ == '__main__':
