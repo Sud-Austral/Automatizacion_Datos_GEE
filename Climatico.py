@@ -44,8 +44,9 @@ def descargarDatos():
     
     print(len(enlace))
     
-    for i in range(len(enlace)):
-
+    #for i in range(len(enlace)):
+    
+    for i in range(2):
         # namefile = str(i+1) + ". Clima " +  fechaA()
         print(enlace[i].text)
         
