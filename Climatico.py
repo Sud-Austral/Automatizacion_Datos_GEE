@@ -34,7 +34,7 @@ def descargarDatos():
     exist = 0
 
     while (exist == 0):
-        enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a")
+        enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
         time.sleep(1)
 
         if (len(enlace) == 0):
@@ -47,7 +47,7 @@ def descargarDatos():
             print("Sí")
 
     print(len(enlace))
-    
+
     '''namefile = "Clima " +  fechaA()
     df = pd.read_csv(links[0].text)
     df["Fecha actual"] = fechaA()
