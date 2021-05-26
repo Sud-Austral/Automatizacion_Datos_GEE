@@ -1,7 +1,8 @@
 name: Datos Climáticos
 
 on:
-    push
+    schedule:
+      - cron:  '0 */24 * * *'
   
 jobs:
   build:

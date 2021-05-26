@@ -1,7 +1,6 @@
 import pandas as pd
-import time
-import os
 import shutil
+import time
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -27,8 +26,7 @@ def fechaA():
 
 def descargarDatos():
 
-    driver = getDriver()
-    # time.sleep(200)    
+    driver = getDriver()  
 
     exist = 0
 
@@ -51,7 +49,7 @@ def descargarDatos():
 
         namefile = str(i+1) + ". Clima " +  fechaA()
         df = pd.read_csv(enlace[i].text)
-
+        
         print(enlace[i].text)
         df = pd.read_csv(enlace[i].text)
 
