@@ -29,17 +29,18 @@ def descargarDatos():
     
 
     driver = getDriver()
-    # time.sleep(200)
-
-    enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a")
+    # time.sleep(200)    
 
     exist = 0
 
     while (exist == 0):
-        
-        if not enlace:
+        enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a")
+        time.sleep(1)
+
+        if (len(enlace) == 0):
             exist = 0
             print("No")
+            
             time.sleep(60)
         else:
             exist = 1
