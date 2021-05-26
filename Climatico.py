@@ -29,9 +29,21 @@ def descargarDatos():
     
 
     driver = getDriver()
-    time.sleep(200)
+    # time.sleep(200)
 
     enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div[1]/a")
+
+    exist = 0
+
+    while (exist == 0):
+        
+        if not enlace:
+            exist = 0
+            print("No")
+            time.sleep(60)
+        else:
+            exist = 1
+            print("Sí")
 
     '''namefile = "Clima " +  fechaA()
     df = pd.read_csv(links[0].text)
