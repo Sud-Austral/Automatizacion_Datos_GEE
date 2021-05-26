@@ -28,7 +28,7 @@ def fechaA():
 def descargarDatos():
     
     driver = getDriver()
-    time.sleep(15)
+    # time.sleep(15)
 
     exist = 0
 
@@ -36,6 +36,7 @@ def descargarDatos():
         try:
             links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
             exist = 1
+            print("Existe")
         except:
             exist = 0
             print("No se han encontrado enlaces.")
