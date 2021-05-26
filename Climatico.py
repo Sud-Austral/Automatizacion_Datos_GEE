@@ -33,8 +33,8 @@ def descargarDatos():
     exist = 0
 
     while(exist == 0):
-        links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
-        if not links:
+        if (driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")):
+            links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
             exist = 1
             print("Existe")
         else:
