@@ -44,6 +44,9 @@ def descargarDatos():
 
     # print(len(enlace))
 
+    # Generar directamente el consolidado, sin archivos.
+    salida = []
+
     for i in range(len(enlace)):
 
         namefile = str(i+1) + ". Clima " +  fechaA()
@@ -55,7 +58,11 @@ def descargarDatos():
         df["Fecha actual"] = fechaA()
         del df[".geo"]
 
-        df.to_excel("Clima/"  + str(namefile) +".xlsx", index=False)
+        # df.to_excel("Clima/"  + str(namefile) +".xlsx", index=False)
+        salida.append(df.copy())
+
+    dataFinal = pd.concat(salida)
+    dataFinal.to_excel("Consolidado clima " + str(fechaA()) +".xlsx", index=False)
 
     driver.close()
 
