@@ -28,7 +28,7 @@ def fechaA():
 def descargarDatos():
     
     driver = getDriver()
-    # time.sleep(200)
+    time.sleep(15)
 
     exist = 0
 
