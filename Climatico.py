@@ -61,7 +61,7 @@ def descargarDatos():
         # df.to_excel("Clima/"  + str(namefile) +".xlsx", index=False)
         salida.append(df.copy())
 
-    dataFinal = pd.dataFrame(salida)
+    dataFinal = pd.DataFrame(salida)
     dataFinal.to_excel("Clima/Clima " + str(fechaA()) +".xlsx", index=False)
 
     driver.close()
