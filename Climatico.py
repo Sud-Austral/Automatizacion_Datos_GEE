@@ -28,7 +28,10 @@ def descargarDatos():
 
     driver = getDriver()  
     time.sleep(250)
-    exist = 0
+
+    enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
+
+    # exist = 0
 
     '''while (exist == 0):
         enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
@@ -47,7 +50,7 @@ def descargarDatos():
 
     for i in range(len(enlace)):
 
-        namefile = str(i+1) + ". Clima " +  fechaA()
+        namefile = str(i+1) + "Clima " +  fechaA()
         df = pd.read_csv(enlace[i].text)
         
         print(enlace[i].text)
