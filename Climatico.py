@@ -27,13 +27,10 @@ def fechaA():
 def descargarDatos():
 
     driver = getDriver()  
-    time.sleep(250)
 
-    enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
+    exist = 0
 
-    # exist = 0
-
-    '''while (exist == 0):
+    while (exist == 0):
         enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
         # time.sleep(1)
 
@@ -41,16 +38,15 @@ def descargarDatos():
             exist = 0
             time.sleep(60)
         else:
-            exist = 1'''
+            exist = 1
 
-    # print(len(enlace))
-
-    # Generar directamente el consolidado, sin archivos.
     salida = []
-
+    
+    print(len(enlace))
+    
     for i in range(len(enlace)):
 
-        namefile = str(i+1) + "Clima " +  fechaA()        
+        # namefile = str(i+1) + ". Clima " +  fechaA()
         print(enlace[i].text)
         
         df = pd.read_csv(enlace[i].text)
