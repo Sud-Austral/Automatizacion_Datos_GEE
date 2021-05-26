@@ -28,34 +28,24 @@ def fechaA():
 def descargarDatos():
     
     driver = getDriver()
-    # time.sleep(15)
+    # time.sleep(200)
 
     exist = 0
 
-    while(exist == 0):
-        if (driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")):
-            links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
-            exist = 1
-            print("Existe")
-        else:
-            exist = 0
-            print("No se han encontrado enlaces.")
-            time.sleep(60)
+    links = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/a")
+    print(len(links))
 
-    if (exist == 1):
-        for i in range(len(links)):
-            namefile = "Clima " +  fechaA()
-            print(links[i].text)
-            df = pd.read_csv(links[i].text)
+    for i in range(len(links)):
+        namefile = "Clima " +  fechaA()
+        print(links[i].text)
+        df = pd.read_csv(links[i].text)
 
-        '''df["Fecha actual"] = fechaA()
-            del df[".geo"]
-            df.to_csv("Clima/"  + str(namefile) +".xlsx", index=False)'''
+    '''df["Fecha actual"] = fechaA()
+        del df[".geo"]
+        df.to_csv("Clima/"  + str(namefile) +".csv", index=False)'''
 
-        driver.close()
+    driver.close()
     
-    else:
-        pass
 if __name__ == '__main__':
     print("Descargando datos...")
     descargarDatos()
