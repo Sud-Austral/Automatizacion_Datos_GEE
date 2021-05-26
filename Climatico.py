@@ -27,10 +27,10 @@ def fechaA():
 def descargarDatos():
 
     driver = getDriver()  
-
+    time.sleep(250)
     exist = 0
 
-    while (exist == 0):
+    '''while (exist == 0):
         enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
         # time.sleep(1)
 
@@ -38,7 +38,7 @@ def descargarDatos():
             exist = 0
             time.sleep(60)
         else:
-            exist = 1
+            exist = 1'''
 
     # print(len(enlace))
 
