@@ -40,12 +40,14 @@ def descargarDatos():
         if (len(enlace) == 0):
             exist = 0
             print("No")
-            
+
             time.sleep(60)
         else:
             exist = 1
             print("Sí")
 
+    print(len(enlace))
+    
     '''namefile = "Clima " +  fechaA()
     df = pd.read_csv(links[0].text)
     df["Fecha actual"] = fechaA()
