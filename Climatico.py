@@ -1,6 +1,6 @@
 import pandas as pd
-import glob
 import time
+import glob
 import numpy as np
 from datetime import datetime
 from selenium import webdriver
@@ -27,9 +27,7 @@ def fechaA():
 
 def descargarDatos():
 
-    driver = getDriver()  
-
-    exist = 0
+    driver = getDriver()
 
     while (exist == 0):
         enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
@@ -41,36 +39,48 @@ def descargarDatos():
         else:
             exist = 1
 
-    salida = []
-    
-    print(len(enlace))
     
     for i in range(len(enlace)):
         
-    # for i in range(2):
         namefile = str(i+1) + ". Clima " +  fechaA()
         print(enlace[i].text)
         
         df = pd.read_csv(enlace[i].text)
 
         df["Fecha actual"] = fechaA()
+        del df["system:index"]
+        del df["COMUNA"]
+        del df["Malla16k"]
+        del df["Malla1k"]
+        del df["Malla2k"]
+        del df["Malla4k"]
+        del df["Malla8k"]
+        del df["NOM_COMUNA"]
+        del df["NOM_PROVIN"]
+        del df["NOM_REGION"]
+        del df["PROVINCIA"]
+        del df["REGION"]
+        del df["latitude"]
+        del df["longitude"]
         del df[".geo"]
 
         df.to_excel("Clima/"  + str(namefile) +".xlsx", index=False)
-        # salida.append(df.copy())
-
-    # dataFinal = pd.concat(salida)
-    # dataFinal.to_excel("Clima/Clima " + str(fechaA()) +".xlsx", index=False)
 
     driver.close()
 
-def unificar_():
+def unificar():
     file = "Clima/*.xlsx"
     files = glob.glob(file)
 
     archivos = np.array(files)
     final = "Clima/Consolidado.csv"
     
+    df_inicial = pd.read_csv(final)
+    df_inicial
+    
+    _df = df_inicial[df_inicial["Fecha actual"] == ""]
+    _df.to_csv("Clima/Consolidado.csv", index=False)
+
     for i in range(len(files)):
         df_inicial = pd.read_csv(final)
         df_inicial
@@ -81,25 +91,10 @@ def unificar_():
             n = df_inicial.append([df])
             n.to_csv(final, index=False)
 
-def unificar():
-    file = "Clima/*.xlsx"
-    files = glob.glob(file)
-
-    archivos = np.array(files)
-    final = "Clima/Consolidado.xlsx"
-    
-    for i in range(len(files)):
-        df_inicial = pd.read_excel(final)
-        df_inicial
-
-        if(str(archivos[i])!=final):
-            df = pd.read_excel(archivos[i])
-
-            n = df_inicial.append([df])
-            n.to_excel(final, index=False)
-
 if __name__ == '__main__':
     print("Descargando datos...")
-    # descargarDatos()
+
+    descargarDatos()
     unificar()
+
     print("Los datos se han descargado")
