@@ -1,4 +1,4 @@
-name: Datos Climaticos
+name: Datos Climáticos
 
 on:
     push
@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.7]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
     - name: Instalar Python 
       run: |
         python -m pip install --upgrade pip
