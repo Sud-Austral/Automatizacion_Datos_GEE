@@ -64,7 +64,7 @@ def descargarDatos():
 
     driver.close()
 
-def unificar():
+def unificar_():
     file = "Clima/*.xlsx"
     files = glob.glob(file)
 
@@ -80,6 +80,23 @@ def unificar():
 
             n = df_inicial.append([df])
             n.to_csv(final, index=False)
+
+def unificar():
+    file = "Clima/*.xlsx"
+    files = glob.glob(file)
+
+    archivos = np.array(files)
+    final = "Clima/Consolidado.xlsx"
+    
+    for i in range(len(files)):
+        df_inicial = pd.read_excel(final)
+        df_inicial
+
+        if(str(archivos[i])!=final):
+            df = pd.read_excel(archivos[i])
+
+            n = df_inicial.append([df])
+            n.to_excel(final, index=False)
 
 if __name__ == '__main__':
     print("Descargando datos...")
