@@ -29,7 +29,7 @@ def descargarDatos():
 
     driver = getDriver()
     exist = 0
-    
+
     while (exist == 0):
         enlace = driver.find_elements_by_xpath("/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a")
         # time.sleep(1)
@@ -91,6 +91,7 @@ def unificar():
 
             n = df_inicial.append([df])
             n.to_csv(final, index=False)
+
 
 if __name__ == '__main__':
     print("Descargando datos...")
