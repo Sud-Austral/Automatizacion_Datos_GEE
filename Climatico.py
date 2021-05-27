@@ -92,11 +92,22 @@ def unificar():
             n = df_inicial.append([df])
             n.to_csv(final, index=False)
 
+def generarVariable():
+    dfTemp = pd.read_csv("Clima/Consolidado.csv", usecols=("Parcela_ID","Temp_C"))
+    dfHumidity = pd.read_csv("Clima/Consolidado.csv", usecols=("Parcela_ID","relative_humidity_2m_above_ground"))
+    dfWind = pd.read_csv("Clima/Consolidado.csv", usecols=("Parcela_ID","wind"))
+    dfET = pd.read_csv("Clima/Consolidado.csv", usecols=("Parcela_ID","ET"))
+
+    dfTemp.to_excel("Clima/V - Temperatura.xlsx", index=False)
+    dfHumidity.to_excel("Clima/V - Humedad relativa.xlsx", index=False)
+    dfWind.to_excel("Clima/V - Viento.xlsx", index=False)
+    dfWind.to_excel("Clima/V - ET.xlsx", index=False)
 
 if __name__ == '__main__':
     print("Descargando datos...")
 
     descargarDatos()
     unificar()
+    generarVariable()
 
     print("Los datos se han descargado")
