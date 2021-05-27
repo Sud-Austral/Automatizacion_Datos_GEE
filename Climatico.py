@@ -1,6 +1,7 @@
 import pandas as pd
-import shutil
+import glob
 import time
+import numpy as np
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -63,7 +64,25 @@ def descargarDatos():
 
     driver.close()
 
+def unificar():
+    file = "Clima/*.xlsx"
+    files = glob.glob(file)
+
+    archivos = np.array(files)
+    final = "Clima/Consolidado.csv"
+    
+    for i in range(len(files)):
+        df_inicial = pd.read_csv(final)
+        df_inicial
+
+        if(str(archivos[i])!=final):
+            df = pd.read_excel(archivos[i])
+
+            n = df_inicial.append([df])
+            n.to_csv(final, index=False)
+
 if __name__ == '__main__':
     print("Descargando datos...")
-    descargarDatos()
+    # descargarDatos()
+    unificar()
     print("Los datos se han descargado")
