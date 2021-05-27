@@ -2,4 +2,4 @@ pandas==1.0.3
 urllib3==1.25.8
 selenium
 openpyxl
-xlrd==2.0.1
+xlrd==1.2.0
