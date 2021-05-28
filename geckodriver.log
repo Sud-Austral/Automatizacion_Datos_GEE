@@ -5554,3 +5554,249 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 1622146059265	geckodriver::marionette	DEBUG	Browser process stopped: exit code: 0
 1622146059274	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1622159974964	geckodriver	INFO	Listening on 127.0.0.1:36257
+1622159975966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexxaYVd"
+1622159975967	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:40347
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1622159976688	Marionette	INFO	Marionette enabled
+1622159976766	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(/usr/lib/firefox/firefox:1881): GLib-GObject-CRITICAL **: 23:59:37.197: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:1901): GLib-GObject-CRITICAL **: 23:59:37.304: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622159978194	Marionette	TRACE	Received observer notification marionette-startup-requested
+1622159978194	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1622159978219	Marionette	TRACE	All scripts recorded.
+1622159978219	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1622159978219	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1622159978220	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1622159978220	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1622159978222	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1622159978222	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1622159978223	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1622159978223	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1622159978224	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1622159978224	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1622159978224	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1622159978224	Marionette	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1622159978225	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1622159978225	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1622159978226	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1622159978226	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1622159978227	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1622159978227	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1622159978227	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1622159978227	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1622159978228	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1622159978229	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1622159978229	Marionette	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1622159978229	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1622159978229	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1622159978229	Marionette	DEBUG	Setting recommended pref prompts.contentPromptSubDialog to false
+1622159978229	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1622159978231	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1622159978231	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1622159978232	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1622159978235	Marionette	INFO	Listening on port 40347
+1622159978235	Marionette	DEBUG	Marionette is listening
+
+(/usr/lib/firefox/firefox:1952): GLib-GObject-CRITICAL **: 23:59:38.274: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622159978283	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:52868
+1622159978285	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:40347.
+1622159978292	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1622159978294	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622159978305	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"b243bb3e-25d6-4e4b-be6e-33f41e6724c7","capabilities":{"browserName":"firefox","browserVersion":"88.0. ... /rust_mozprofilexxaYVd","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1622159978308	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"b243bb3e-25d6-4e4b-be6e-33f41e6724c7","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"88.0.1","moz:accessibilityChecks":false,"moz:buildID":"20210504152106","moz:geckodriverVersion":"0.29.1","moz:headless":true,"moz:processID":1831,"moz:profile":"/tmp/rust_mozprofilexxaYVd","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"linux","platformVersion":"5.4.0-1047-azure","rotatable":false,"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1622159978310	webdriver::server	DEBUG	-> POST /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/timeouts {"pageLoad": 60000}
+1622159978312	Marionette	DEBUG	0 -> [0,2,"WebDriver:SetTimeouts",{"pageLoad":60000}]
+1622159978313	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1622159978313	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1622159978314	webdriver::server	DEBUG	-> POST /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/url {"url": "https://testhector.users.earthengine.app/view/climaautomatico"}
+1622159978315	Marionette	DEBUG	0 -> [0,3,"WebDriver:Navigate",{"url":"https://testhector.users.earthengine.app/view/climaautomatico"}]
+1622159978320	Marionette	TRACE	[17] MarionetteEvents actor created for window id 2147483649
+1622159978321	Marionette	TRACE	Received event beforeunload for about:blank
+1622159979010	Marionette	TRACE	Received event pagehide for about:blank
+1622159979641	Marionette	TRACE	[17] MarionetteEvents actor created for window id 2147483650
+1622159979642	Marionette	TRACE	Received event DOMContentLoaded for https://testhector.users.earthengine.app/view/climaautomatico
+1622159979665	Marionette	TRACE	[2147483649] MarionetteEvents actor created for window id 2147483652
+1622159979900	Marionette	TRACE	Received event pageshow for https://testhector.users.earthengine.app/view/climaautomatico
+1622159979900	Marionette	DEBUG	0 <- [1,3,null,{"value":null}]
+1622159979911	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1622159979912	webdriver::server	DEBUG	-> POST /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/elements {"using": "xpath", "value": "/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a"}
+1622159979915	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a"}]
+1622159979931	Marionette	TRACE	[17] MarionetteCommands actor created for window id 2147483650
+1622159979942	Marionette	DEBUG	0 <- [1,4,null,[]]
+1622159979946	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1622159979978	Marionette	TRACE	[2147483650] MarionetteEvents actor created for window id 2147483654
+1622160040003	webdriver::server	DEBUG	-> POST /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/elements {"using": "xpath", "value": "/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a"}
+1622160040004	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/div/div[1]/div/div/div/div/div/div/div[4]/div/div/div/a"}]
+1622160040012	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"aefa1bc4-3028-4118-a300-7d3ca365f41d"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"e51d4157-87dd-4c2b-b7ae-77952f1ee30a"},{"element-6066-11e4-a52e-4f735466cecf":"1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39"}]]
+1622160040012	webdriver::server	DEBUG	<- 200 OK {"value":[{"element-6066-11e4-a52e-4f735466cecf":"aefa1bc4-3028-4118-a300-7d3ca365f41d"},{"element-6066-11e4-a52e-4f735466cecf":"180f16f0-1f7c-420e-bf67-4dce34fa8710"},{"element-6066-11e4-a52e-4f735466cecf":"d3ff2b45-ac2e-4c76-b3a8-103017c15233"},{"element-6066-11e4-a52e-4f735466cecf":"c823588d-dd8a-4be8-89d9-919a48141aa1"},{"element-6066-11e4-a52e-4f735466cecf":"b8a75cd6-c271-4243-82c4-6c19705f2305"},{"element-6066-11e4-a52e-4f735466cecf":"34a9b064-1d7b-4fb4-bf7c-d1cc34f85957"},{"element-6066-11e4-a52e-4f735466cecf":"24847299-690f-416f-93a8-04448b5c37a4"},{"element-6066-11e4-a52e-4f735466cecf":"d02f33b8-3687-4a77-872e-70227898668e"},{"element-6066-11e4-a52e-4f735466cecf":"0511f461-89f1-4656-b84a-405bdf82249e"},{"element-6066-11e4-a52e-4f735466cecf":"b5047feb-cbdf-4c56-942e-52c77a4ce5c6"},{"element-6066-11e4-a52e-4f735466cecf":"de970934-8efc-46fa-95e8-e8965bce5b2e"},{"element-6066-11e4-a52e-4f735466cecf":"f48b2e3f-e040-4e52-98ae-ef9e9c4524dd"},{"element-6066-11e4-a52e-4f735466cecf":"553aab52-5379-42ad-86c9-958283e97525"},{"element-6066-11e4-a52e-4f735466cecf":"e51d4157-87dd-4c2b-b7ae-77952f1ee30a"},{"element-6066-11e4-a52e-4f735466cecf":"1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39"}]}
+1622160040014	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/aefa1bc4-3028-4118-a300-7d3ca365f41d/text 
+1622160040014	Marionette	DEBUG	0 -> [0,6,"WebDriver:GetElementText",{"id":"aefa1bc4-3028-4118-a300-7d3ca365f41d"}]
+1622160040032	Marionette	DEBUG	0 <- [1,6,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/e32b81e433a04f63cdf67dcd2ca0c8c4-d8dab071ea46b4df8e440f72d661918a:getFeatures"}]
+1622160040033	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/e32b81e433a04f63cdf67dcd2ca0c8c4-d8dab071ea46b4df8e440f72d661918a:getFeatures"}
+1622160040034	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/aefa1bc4-3028-4118-a300-7d3ca365f41d/text 
+1622160040034	Marionette	DEBUG	0 -> [0,7,"WebDriver:GetElementText",{"id":"aefa1bc4-3028-4118-a300-7d3ca365f41d"}]
+1622160040039	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/e32b81e433a04f63cdf67dcd2ca0c8c4-d8dab071ea46b4df8e440f72d661918a:getFeatures"}]
+1622160040040	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/e32b81e433a04f63cdf67dcd2ca0c8c4-d8dab071ea46b4df8e440f72d661918a:getFeatures"}
+1622160044244	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/180f16f0-1f7c-420e-bf67-4dce34fa8710/text 
+1622160044245	Marionette	DEBUG	0 -> [0,8,"WebDriver:GetElementText",{"id":"180f16f0-1f7c-420e-bf67-4dce34fa8710"}]
+1622160044249	Marionette	DEBUG	0 <- [1,8,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/080cde1ab0c7946c2cd2b7400db05920-bfb3c0c43e96f553bcc7873ad859c910:getFeatures"}]
+1622160044250	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/080cde1ab0c7946c2cd2b7400db05920-bfb3c0c43e96f553bcc7873ad859c910:getFeatures"}
+1622160044251	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/180f16f0-1f7c-420e-bf67-4dce34fa8710/text 
+1622160044251	Marionette	DEBUG	0 -> [0,9,"WebDriver:GetElementText",{"id":"180f16f0-1f7c-420e-bf67-4dce34fa8710"}]
+1622160044255	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/080cde1ab0c7946c2cd2b7400db05920-bfb3c0c43e96f553bcc7873ad859c910:getFeatures"}]
+1622160044255	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/080cde1ab0c7946c2cd2b7400db05920-bfb3c0c43e96f553bcc7873ad859c910:getFeatures"}
+1622160047573	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/d3ff2b45-ac2e-4c76-b3a8-103017c15233/text 
+1622160047575	Marionette	DEBUG	0 -> [0,10,"WebDriver:GetElementText",{"id":"d3ff2b45-ac2e-4c76-b3a8-103017c15233"}]
+1622160047579	Marionette	DEBUG	0 <- [1,10,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/fbe6d1ac010090fcccaca3b6c600db37-73c2c75e78dca9bc64db23f0358b6e92:getFeatures"}]
+1622160047580	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/fbe6d1ac010090fcccaca3b6c600db37-73c2c75e78dca9bc64db23f0358b6e92:getFeatures"}
+1622160047581	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/d3ff2b45-ac2e-4c76-b3a8-103017c15233/text 
+1622160047582	Marionette	DEBUG	0 -> [0,11,"WebDriver:GetElementText",{"id":"d3ff2b45-ac2e-4c76-b3a8-103017c15233"}]
+1622160047586	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/fbe6d1ac010090fcccaca3b6c600db37-73c2c75e78dca9bc64db23f0358b6e92:getFeatures"}]
+1622160047587	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/fbe6d1ac010090fcccaca3b6c600db37-73c2c75e78dca9bc64db23f0358b6e92:getFeatures"}
+1622160051268	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/c823588d-dd8a-4be8-89d9-919a48141aa1/text 
+1622160051269	Marionette	DEBUG	0 -> [0,12,"WebDriver:GetElementText",{"id":"c823588d-dd8a-4be8-89d9-919a48141aa1"}]
+1622160051274	Marionette	DEBUG	0 <- [1,12,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/4cedcbb5bbefb2c2d278d060144e6835-e6390d429905e41f8dd1187d587ebabf:getFeatures"}]
+1622160051274	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/4cedcbb5bbefb2c2d278d060144e6835-e6390d429905e41f8dd1187d587ebabf:getFeatures"}
+1622160051275	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/c823588d-dd8a-4be8-89d9-919a48141aa1/text 
+1622160051275	Marionette	DEBUG	0 -> [0,13,"WebDriver:GetElementText",{"id":"c823588d-dd8a-4be8-89d9-919a48141aa1"}]
+1622160051279	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/4cedcbb5bbefb2c2d278d060144e6835-e6390d429905e41f8dd1187d587ebabf:getFeatures"}]
+1622160051279	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/4cedcbb5bbefb2c2d278d060144e6835-e6390d429905e41f8dd1187d587ebabf:getFeatures"}
+1622160055226	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/b8a75cd6-c271-4243-82c4-6c19705f2305/text 
+1622160055227	Marionette	DEBUG	0 -> [0,14,"WebDriver:GetElementText",{"id":"b8a75cd6-c271-4243-82c4-6c19705f2305"}]
+1622160055232	Marionette	DEBUG	0 <- [1,14,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b593eade00debf9acc6ca9f21b200fbf-51654e2c1591eeadb0eda64cfba70a46:getFeatures"}]
+1622160055232	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b593eade00debf9acc6ca9f21b200fbf-51654e2c1591eeadb0eda64cfba70a46:getFeatures"}
+1622160055233	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/b8a75cd6-c271-4243-82c4-6c19705f2305/text 
+1622160055233	Marionette	DEBUG	0 -> [0,15,"WebDriver:GetElementText",{"id":"b8a75cd6-c271-4243-82c4-6c19705f2305"}]
+1622160055237	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b593eade00debf9acc6ca9f21b200fbf-51654e2c1591eeadb0eda64cfba70a46:getFeatures"}]
+1622160055237	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b593eade00debf9acc6ca9f21b200fbf-51654e2c1591eeadb0eda64cfba70a46:getFeatures"}
+1622160059045	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/34a9b064-1d7b-4fb4-bf7c-d1cc34f85957/text 
+1622160059046	Marionette	DEBUG	0 -> [0,16,"WebDriver:GetElementText",{"id":"34a9b064-1d7b-4fb4-bf7c-d1cc34f85957"}]
+1622160059053	Marionette	DEBUG	0 <- [1,16,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5b1abe6bfd24ba34a872256c63427ecd-602de07c2362ae1981411f2d3064dffe:getFeatures"}]
+1622160059053	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5b1abe6bfd24ba34a872256c63427ecd-602de07c2362ae1981411f2d3064dffe:getFeatures"}
+1622160059054	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/34a9b064-1d7b-4fb4-bf7c-d1cc34f85957/text 
+1622160059055	Marionette	DEBUG	0 -> [0,17,"WebDriver:GetElementText",{"id":"34a9b064-1d7b-4fb4-bf7c-d1cc34f85957"}]
+1622160059060	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5b1abe6bfd24ba34a872256c63427ecd-602de07c2362ae1981411f2d3064dffe:getFeatures"}]
+1622160059060	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5b1abe6bfd24ba34a872256c63427ecd-602de07c2362ae1981411f2d3064dffe:getFeatures"}
+1622160063674	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/24847299-690f-416f-93a8-04448b5c37a4/text 
+1622160063675	Marionette	DEBUG	0 -> [0,18,"WebDriver:GetElementText",{"id":"24847299-690f-416f-93a8-04448b5c37a4"}]
+1622160063679	Marionette	DEBUG	0 <- [1,18,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5571f618b5c8a2f5e2ead3e0978e3d81-0987019328b3873f6372229470a6f1f2:getFeatures"}]
+1622160063679	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5571f618b5c8a2f5e2ead3e0978e3d81-0987019328b3873f6372229470a6f1f2:getFeatures"}
+1622160063680	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/24847299-690f-416f-93a8-04448b5c37a4/text 
+1622160063681	Marionette	DEBUG	0 -> [0,19,"WebDriver:GetElementText",{"id":"24847299-690f-416f-93a8-04448b5c37a4"}]
+1622160063684	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5571f618b5c8a2f5e2ead3e0978e3d81-0987019328b3873f6372229470a6f1f2:getFeatures"}]
+1622160063685	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/5571f618b5c8a2f5e2ead3e0978e3d81-0987019328b3873f6372229470a6f1f2:getFeatures"}
+1622160067532	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/d02f33b8-3687-4a77-872e-70227898668e/text 
+1622160067532	Marionette	DEBUG	0 -> [0,20,"WebDriver:GetElementText",{"id":"d02f33b8-3687-4a77-872e-70227898668e"}]
+1622160067536	Marionette	DEBUG	0 <- [1,20,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/1a94e487c643e8f953017ba7b5b92e02-61acf24000b218af57700e2506e9ae0c:getFeatures"}]
+1622160067537	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/1a94e487c643e8f953017ba7b5b92e02-61acf24000b218af57700e2506e9ae0c:getFeatures"}
+1622160067538	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/d02f33b8-3687-4a77-872e-70227898668e/text 
+1622160067538	Marionette	DEBUG	0 -> [0,21,"WebDriver:GetElementText",{"id":"d02f33b8-3687-4a77-872e-70227898668e"}]
+1622160067542	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/1a94e487c643e8f953017ba7b5b92e02-61acf24000b218af57700e2506e9ae0c:getFeatures"}]
+1622160067542	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/1a94e487c643e8f953017ba7b5b92e02-61acf24000b218af57700e2506e9ae0c:getFeatures"}
+1622160071087	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/0511f461-89f1-4656-b84a-405bdf82249e/text 
+1622160071088	Marionette	DEBUG	0 -> [0,22,"WebDriver:GetElementText",{"id":"0511f461-89f1-4656-b84a-405bdf82249e"}]
+1622160071092	Marionette	DEBUG	0 <- [1,22,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/f2a314bdf4222fb50d4666b732775753-4ac873249d0a578bacd781c7fa6b5aa8:getFeatures"}]
+1622160071093	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/f2a314bdf4222fb50d4666b732775753-4ac873249d0a578bacd781c7fa6b5aa8:getFeatures"}
+1622160071094	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/0511f461-89f1-4656-b84a-405bdf82249e/text 
+1622160071094	Marionette	DEBUG	0 -> [0,23,"WebDriver:GetElementText",{"id":"0511f461-89f1-4656-b84a-405bdf82249e"}]
+1622160071098	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/f2a314bdf4222fb50d4666b732775753-4ac873249d0a578bacd781c7fa6b5aa8:getFeatures"}]
+1622160071098	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/f2a314bdf4222fb50d4666b732775753-4ac873249d0a578bacd781c7fa6b5aa8:getFeatures"}
+1622160074690	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/b5047feb-cbdf-4c56-942e-52c77a4ce5c6/text 
+1622160074691	Marionette	DEBUG	0 -> [0,24,"WebDriver:GetElementText",{"id":"b5047feb-cbdf-4c56-942e-52c77a4ce5c6"}]
+1622160074695	Marionette	DEBUG	0 <- [1,24,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/058a78c530d50ddcc6b133b761ebd636-e9ed414d9252849a485347fc04671dc0:getFeatures"}]
+1622160074695	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/058a78c530d50ddcc6b133b761ebd636-e9ed414d9252849a485347fc04671dc0:getFeatures"}
+1622160074696	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/b5047feb-cbdf-4c56-942e-52c77a4ce5c6/text 
+1622160074697	Marionette	DEBUG	0 -> [0,25,"WebDriver:GetElementText",{"id":"b5047feb-cbdf-4c56-942e-52c77a4ce5c6"}]
+1622160074700	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/058a78c530d50ddcc6b133b761ebd636-e9ed414d9252849a485347fc04671dc0:getFeatures"}]
+1622160074700	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/058a78c530d50ddcc6b133b761ebd636-e9ed414d9252849a485347fc04671dc0:getFeatures"}
+1622160079716	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/de970934-8efc-46fa-95e8-e8965bce5b2e/text 
+1622160079716	Marionette	DEBUG	0 -> [0,26,"WebDriver:GetElementText",{"id":"de970934-8efc-46fa-95e8-e8965bce5b2e"}]
+1622160079722	Marionette	DEBUG	0 <- [1,26,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/551d7d11eccb08909130b70533f6d7b4-b80f37ec08fe1183f86b9ab5b0b7ae5a:getFeatures"}]
+1622160079722	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/551d7d11eccb08909130b70533f6d7b4-b80f37ec08fe1183f86b9ab5b0b7ae5a:getFeatures"}
+1622160079723	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/de970934-8efc-46fa-95e8-e8965bce5b2e/text 
+1622160079724	Marionette	DEBUG	0 -> [0,27,"WebDriver:GetElementText",{"id":"de970934-8efc-46fa-95e8-e8965bce5b2e"}]
+1622160079727	Marionette	DEBUG	0 <- [1,27,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/551d7d11eccb08909130b70533f6d7b4-b80f37ec08fe1183f86b9ab5b0b7ae5a:getFeatures"}]
+1622160079727	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/551d7d11eccb08909130b70533f6d7b4-b80f37ec08fe1183f86b9ab5b0b7ae5a:getFeatures"}
+1622160083691	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/f48b2e3f-e040-4e52-98ae-ef9e9c4524dd/text 
+1622160083692	Marionette	DEBUG	0 -> [0,28,"WebDriver:GetElementText",{"id":"f48b2e3f-e040-4e52-98ae-ef9e9c4524dd"}]
+1622160083696	Marionette	DEBUG	0 <- [1,28,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/045437760859b304b96bba0683f19927-8abad3892ce84258a8f1a03e06d4b4ee:getFeatures"}]
+1622160083696	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/045437760859b304b96bba0683f19927-8abad3892ce84258a8f1a03e06d4b4ee:getFeatures"}
+1622160083698	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/f48b2e3f-e040-4e52-98ae-ef9e9c4524dd/text 
+1622160083698	Marionette	DEBUG	0 -> [0,29,"WebDriver:GetElementText",{"id":"f48b2e3f-e040-4e52-98ae-ef9e9c4524dd"}]
+1622160083702	Marionette	DEBUG	0 <- [1,29,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/045437760859b304b96bba0683f19927-8abad3892ce84258a8f1a03e06d4b4ee:getFeatures"}]
+1622160083702	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/045437760859b304b96bba0683f19927-8abad3892ce84258a8f1a03e06d4b4ee:getFeatures"}
+1622160088095	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/553aab52-5379-42ad-86c9-958283e97525/text 
+1622160088096	Marionette	DEBUG	0 -> [0,30,"WebDriver:GetElementText",{"id":"553aab52-5379-42ad-86c9-958283e97525"}]
+1622160088100	Marionette	DEBUG	0 <- [1,30,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b8ea6c107b57b9c0bd660e503430c752-c920770627c8ea4d882188d234b5e570:getFeatures"}]
+1622160088101	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b8ea6c107b57b9c0bd660e503430c752-c920770627c8ea4d882188d234b5e570:getFeatures"}
+1622160088102	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/553aab52-5379-42ad-86c9-958283e97525/text 
+1622160088102	Marionette	DEBUG	0 -> [0,31,"WebDriver:GetElementText",{"id":"553aab52-5379-42ad-86c9-958283e97525"}]
+1622160088106	Marionette	DEBUG	0 <- [1,31,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b8ea6c107b57b9c0bd660e503430c752-c920770627c8ea4d882188d234b5e570:getFeatures"}]
+1622160088106	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/b8ea6c107b57b9c0bd660e503430c752-c920770627c8ea4d882188d234b5e570:getFeatures"}
+1622160092300	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/e51d4157-87dd-4c2b-b7ae-77952f1ee30a/text 
+1622160092301	Marionette	DEBUG	0 -> [0,32,"WebDriver:GetElementText",{"id":"e51d4157-87dd-4c2b-b7ae-77952f1ee30a"}]
+1622160092305	Marionette	DEBUG	0 <- [1,32,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/7f889120bb6d43e468eb80063cd721fe-ad83fde74b709d2fbb48e8ea9ccc3d6e:getFeatures"}]
+1622160092305	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/7f889120bb6d43e468eb80063cd721fe-ad83fde74b709d2fbb48e8ea9ccc3d6e:getFeatures"}
+1622160092307	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/e51d4157-87dd-4c2b-b7ae-77952f1ee30a/text 
+1622160092308	Marionette	DEBUG	0 -> [0,33,"WebDriver:GetElementText",{"id":"e51d4157-87dd-4c2b-b7ae-77952f1ee30a"}]
+1622160092311	Marionette	DEBUG	0 <- [1,33,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/7f889120bb6d43e468eb80063cd721fe-ad83fde74b709d2fbb48e8ea9ccc3d6e:getFeatures"}]
+1622160092311	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/7f889120bb6d43e468eb80063cd721fe-ad83fde74b709d2fbb48e8ea9ccc3d6e:getFeatures"}
+1622160096551	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39/text 
+1622160096551	Marionette	DEBUG	0 -> [0,34,"WebDriver:GetElementText",{"id":"1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39"}]
+1622160096555	Marionette	DEBUG	0 <- [1,34,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/10254ababa06d5a32c5d68a3b9d3cd03-ed12027f78b2533232697d703f697392:getFeatures"}]
+1622160096556	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/10254ababa06d5a32c5d68a3b9d3cd03-ed12027f78b2533232697d703f697392:getFeatures"}
+1622160096557	webdriver::server	DEBUG	-> GET /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/element/1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39/text 
+1622160096557	Marionette	DEBUG	0 -> [0,35,"WebDriver:GetElementText",{"id":"1a27c24c-e79e-4ebf-a7a3-7e7c48f0ae39"}]
+1622160096560	Marionette	DEBUG	0 <- [1,35,null,{"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/10254ababa06d5a32c5d68a3b9d3cd03-ed12027f78b2533232697d703f697392:getFeatures"}]
+1622160096561	webdriver::server	DEBUG	<- 200 OK {"value":"https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/tables/10254ababa06d5a32c5d68a3b9d3cd03-ed12027f78b2533232697d703f697392:getFeatures"}
+1622160104697	webdriver::server	DEBUG	-> DELETE /session/b243bb3e-25d6-4e4b-be6e-33f41e6724c7/window 
+1622160104698	Marionette	DEBUG	0 -> [0,36,"WebDriver:CloseWindow",{}]
+1622160104698	Marionette	DEBUG	0 <- [1,36,null,[]]
+1622160104698	webdriver::server	DEBUG	Last window was closed, deleting session
+1622160104698	webdriver::server	DEBUG	Deleting session
+1622160104699	Marionette	DEBUG	0 -> [0,37,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1622160104699	Marionette	INFO	Stopped listening on port 40347
+1622160104726	Marionette	TRACE	Received observer notification quit-application
+1622160104729	Marionette	DEBUG	0 <- [1,37,null,{"cause":"shutdown","forced":false}]
+1622160104753	Marionette	DEBUG	Closed connection 0
+1622160104829	Marionette	TRACE	Received observer notification xpcom-will-shutdown
+1622160104829	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1622160104829	Marionette	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1622160104829	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1622160104829	Marionette	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.search.update
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.tabs.remote.separatePrivilegedContentProcess
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1622160104830	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1622160104830	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.max_script_run_time
+1622160104831	Marionette	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1622160104831	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1622160104831	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1622160104831	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1622160104831	Marionette	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1622160104831	Marionette	DEBUG	Resetting recommended pref prompts.contentPromptSubDialog
+1622160104831	Marionette	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1622160104831	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1622160104831	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1622160104832	Marionette	DEBUG	Resetting recommended pref signon.rememberSignons
+1622160104832	Marionette	DEBUG	Marionette stopped listening
+1622160104945	geckodriver::marionette	DEBUG	Browser process stopped: exit code: 0
+1622160104954	webdriver::server	DEBUG	<- 200 OK {"value":[]}
